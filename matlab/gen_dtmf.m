@@ -26,7 +26,7 @@ s = upper( input('Escriba una cadena de caracteres 0-9, A-D, *, #:','s') );
 for n=1:length(s)
     for k=1:length(dtmf_vals)
         if (s(n) == dtmf_vals{k}.key)
-           x = play_dtmf(dtmf_vals{k}.f1, dtmf_vals{k}.f2);
+            x = play_dtmf(dtmf_vals{k}.f1, dtmf_vals{k}.f2);
         end
     end  
 end
